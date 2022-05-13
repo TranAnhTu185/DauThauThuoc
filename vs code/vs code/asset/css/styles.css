@@ -48,6 +48,13 @@ body {
     height: 102px;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+.header.nav {
+    animation: fadeInNav linear 1s;
 }
 
 
@@ -61,6 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #EDF0F2;
+    background-color: #fff;
 }
 
 .menu-top__container {
@@ -139,10 +147,28 @@ body {
     border-radius: 4px;
 }
 
+.btn:hover {
+    color: rgb(155, 151, 151);
+}
+
 .btn_register {
     margin-right: 0;
     color: #fff;
     background-color: #32B788;
+    transition: all 0.5s ease;
+    justify-content: center;
+    background-image: radial-gradient(circle, transparent 1%, #32B788 1%);
+    background-position: center;
+    background-size: 15000%; 
+}
+
+.btn_register:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    text-decoration: none;
+    background-color: #8ed4bc;
+    background-size: 100%;
 }
 
 .menu__mobile {
@@ -209,50 +235,45 @@ body {
 
 /* container */
 
-.app__container {
-    width: 100%;
-    overflow: hidden;
-}
-
 /* banner */
 
 .banner {
-    height: 680px;
-    margin-bottom: 80px;
-    overflow: hidden;
+    margin-top: 104px;
 }
+
+.banner-slide {
+    height: 650px;
+}
+
 .img-slide-1 {
     width: 100%;
-    margin-bottom: 86px;
     background-image: url(../img/backgroundbanner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     padding: 40px 0;
-    height: 100%;
-    min-height: 680px;
+    height: 650px;
 }
 
 .img-slide-2 {
     background-color: #2572C9;
     width: 100%;
-    margin-bottom: 86px;
     background-image: url(../img/backgroundbanner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     padding: 40px 0;
-    min-height: 656px;
+    height: 650px;
+
 }
 
 .img-slide-3 {
+    height: 650px;
     width: 100%;
-    margin-bottom: 86px;
     background-image: url(../img/backgroungbanner2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    min-height: 680px;
 }
 
 .inner {
@@ -261,20 +282,16 @@ body {
     margin: 0 auto;
 }
 
-.banner-container {
-    width: 457px;
-    position: relative;
-    top: 108px;
-    font-size: 1.6rem;
-    color: #52606B;
+.banner-container{
+    padding: 118px 0 0;
 }
 
-.banner-text-w .banner-container__title,
-.banner-text-w .banner-container__description {
-    color: #fff;
+.banner-container-3 {
+    padding: 158px 0 0;
 }
 
-.banner-container__title {
+
+.banner-title {
     font-size: 4.8rem;
     line-height: 5.4rem;
     font-weight: 700;
@@ -283,12 +300,12 @@ body {
     margin-bottom: 24px;
 }
 
-.banner-container__list {
+.banner-list {
     list-style: none;
     padding: 0;
 }
 
-.banner-container__description {
+.banner-item {
     display: flex;
     font-family: 'Inter';
     font-style: normal;
@@ -298,13 +315,18 @@ body {
     color: #52606B;
 }
 
-.banner-container__description img {
+
+.banner-text-w{
+    color: #fff;
+}
+
+.banner-item img {
     height: 16px;
     margin-right: 12px;
     margin-top: 3px;
 }
 
-.banner-container-btn {
+.banner-btn {
     background-color: #32B788;
     outline: none;
     font-size: 1.6rem;
@@ -316,15 +338,33 @@ body {
     border: none;
     display: flex;
     color: #fff;
+    transition: all 0.5s ease;
     align-items: center;
+    letter-spacing: 1px;
     justify-content: center;
+    background-image: radial-gradient(circle, transparent 1%, #32B788 1%);
+    background-position: center;
+    background-size: 15000%;   
 }
 
-.banner-img {
-    flex: 1;
+.banner-btn:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    text-decoration: none;
+    background-color: #8ed4bc;
+    background-size: 100%;
+
 }
 
-.banner-container-btn img {
+.img-icon-banner {
+    position: absolute;
+    top: 30%;
+    left: 23.1%;
+    animation: fadeIn 2.5s 3s both alternate infinite;
+}
+
+.banner-btn img {
     margin-right: 10px;
 }
 
@@ -363,6 +403,7 @@ body {
 /* benefit */
 
 .benefit {
+    margin-top: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -407,7 +448,7 @@ body {
     width: 56%;
     height: 130px;
     background-color: white;
-    right: -5px;
+    right: 0px;
     top: -78px;
 }
 
@@ -442,10 +483,15 @@ body {
     margin-bottom: 40px;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 .benefit__content-wrapper:nth-child(2n+1) {
     margin-right: 60px
+}
+
+.benefit__content-img {
+    animation: fadeInBenefit 2.5s 3s both alternate infinite;
 }
 
 .benefit__content-item {
@@ -684,6 +730,21 @@ body {
     color: #fff;
     border: none;
     outline: none;
+    transition: all 0.5s ease;
+    justify-content: center;
+    background-image: radial-gradient(circle, transparent 1%, #32B788 1%);
+    background-position: center;
+    background-size: 15000%;   
+}
+
+.new__item-content-btn:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    text-decoration: none;
+    background-color: #8ed4bc;
+    background-size: 100%;
+
 }
 
 .new__item-img {
@@ -864,8 +925,24 @@ body {
     border-radius: 4px;
     color: #fff;
     display: flex;
+    border: none;
     justify-content: center;
     margin: 8px 0 0 0;
+    align-items: center;
+    transition: all 0.5s ease;
+    justify-content: center;
+    background-image: radial-gradient(circle, transparent 1%, #32B788 1%);
+    background-position: center;
+    background-size: 15000%; 
+}
+
+.btn__send:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    text-decoration: none;
+    background-color: #8ed4bc;
+    background-size: 100%;
 }
 
 .btn__send span {
@@ -1123,5 +1200,32 @@ body {
 
     100% {
         transform: scale(1.5)
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(10px)
+    }
+}
+
+@keyframes fadeInNav {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeInBenefit {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0)
     }
 }
