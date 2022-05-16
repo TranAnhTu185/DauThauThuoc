@@ -115,12 +115,10 @@
 
     .btn__controller {
         width: 100%;
-        bottom: 0;
     }
 
     .btn__controller-right {
         right: 40px;
-        bottom: 0;
     }
 
     /* header */
@@ -213,6 +211,20 @@
         padding: 0 102px;
     }
 
+    .procedure__content-img {
+        display: none !important;
+    }
+
+
+    .procedure-img-tablet {
+        display: block;
+    }
+
+
+    .procedure-img-tablet img {
+        width: 100%;
+    }
+
     .procedure__content-img-mobile {
         display: none !important;
     }
@@ -272,7 +284,7 @@
     }
     
     .footer__bottom {
-        top: 375px;
+        top: 393px;
     }
 }
 
@@ -284,12 +296,10 @@
     
     .btn__controller {
         width: 100%;
-        bottom: 0;
     }
 
     .btn__controller-right {
         right: 30px;
-        bottom: 0;
     }
 
     .controller-phone-des {
@@ -360,7 +370,7 @@
     }
 
     .bg-banner-3 {
-        margin-top: 112px;
+        margin-top: 71px;
     }
 
     .banner-btn {
@@ -407,6 +417,10 @@
     }
 
     .procedure__content-img {
+        display: none !important;
+    }
+
+    .procedure-img-tablet {
         display: none !important;
     }
 
@@ -490,7 +504,7 @@
     }
     
     .footer__bottom {
-        top: 575px;
+        top: 598px;
     }
 }
 
@@ -508,6 +522,14 @@
     .btn__controller-right {
         right: 30px;
         bottom: 10px;
+    }
+
+    .host-circle {
+        left:14px;
+    }
+
+    .host-circle-fill {
+        left: 10px;
     }
 
     /* header */
@@ -541,7 +563,7 @@
     }
 
     .bg-banner-3 {
-        margin-top: 98px;
+        margin-top: 20px;
     }
 
     .slick-dots {
@@ -586,7 +608,6 @@
 
     .procedure__content-img-mobile {
         display: block;
-        width: 326px;
     }
 
     /* new */
@@ -627,6 +648,11 @@
         font-size: 1.2rem;
     }
 
+    .contact__content-phone img,
+    .contact__content-mail img {
+        margin-right: 12px;
+    }
+
     .contact__content-img-mobile {
         display: block;
     }
@@ -653,7 +679,7 @@
     }
 
     .footer__bottom {
-        top: 540px;
+        top: 563px;
     }
 
 }
