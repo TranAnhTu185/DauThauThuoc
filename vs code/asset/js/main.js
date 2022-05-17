@@ -5,13 +5,17 @@ let animateMuis =  document.querySelectorAll('.animate-mui');
 let procedureContainers = document.querySelectorAll('.procedure-container');
 let ProcedureDes = document.querySelectorAll('.procedure-description');
 
-console.log(ProcedureDes);
+const btnScollTop = document.querySelector('.controller__right-up');
+
+console.log(btnScollTop);
 window.onscroll = () => {
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       document.querySelector('.header').classList.add('nav');
+      btnScollTop.style.display = "flex";
     }
     else {
       document.querySelector('.header').classList.remove('nav');
+      btnScollTop.style.display = "none";
     }
 }
 
@@ -55,4 +59,21 @@ setInterval(() => {
   animateMuis[indexActive].classList.add('active');
   ProcedureDes[indexActive + 1].classList.add('active');
   indexActive++;
-}, 2000)
+}, 2000);
+
+// if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  
+// } else {
+//   btnScollTop.style.display = "none";
+// }
+
+
+btnScollTop.onclick = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
+}
+
+//scroll to element
+document.querySelector('#benefit').addEventListener('click',function(){
+  document.querySelector('.benefit').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+})
