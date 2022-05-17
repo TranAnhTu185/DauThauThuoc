@@ -121,6 +121,7 @@ const modalContainer = document.querySelector('.js-modal-container');
 for(const btnRegisterTest of btnRegisterTests) {
   btnRegisterTest.onclick = () => {
     modal.classList.add('open');
+    document.querySelector('.form-resgister').style.display = 'flex';
   }
 }
 

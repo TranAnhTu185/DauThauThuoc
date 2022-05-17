@@ -1306,12 +1306,12 @@ body {
     bottom: 100%;
     z-index: 12;
     overflow: hidden;
-    animation: modalFadeOut linear 0.5s;
+    animation: modalFadeOut linear 0.3s;
 }
 
 .model.open {
     bottom: 0;
-    animation: modalFadeIn linear 0.5s;
+    animation: modalFadeIn linear 0.7s;
 }
 
 
@@ -1337,11 +1337,10 @@ body {
     margin: 0 auto;
     background-color: #fff;
     padding: 20px 60px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    animation: formTest 1s linear;
+    display: none;
 }
 
 .register-heading {
@@ -1409,15 +1408,6 @@ body {
     to {
         opacity: 1;
         bottom: 0;
-    }
-}
-
-@keyframes formTest {
-    from {
-        height: 0;
-    }
-    to {
-        height: 470px;
     }
 }
 
