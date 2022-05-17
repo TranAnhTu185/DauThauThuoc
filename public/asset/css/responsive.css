@@ -24,7 +24,7 @@
     }
     
     .inner{
-        padding:0 16px;
+        padding:0 30px;
     }
 
     .img-slide-1,
@@ -116,6 +116,11 @@
         display: none;
     }
 
+    .inner {
+        width: 100%;
+        padding: 0 30px;
+    }
+
     .btn__controller {
         width: 100%;
     }
@@ -148,13 +153,9 @@
     .img-slide-1, 
     .img-slide-2, 
     .img-slide-3 {
-        max-height: 520px;
+        max-height: 530px;
     } 
-    .inner {
-        width: 100%;
-        padding: 0 30px;
-    }
-
+    
     .banner-title {
         font-size: 3.2rem;
         line-height: 4.4rem;
@@ -179,17 +180,24 @@
     }
 
     .bg-banner-3 {
-        margin-top: 217px;
+        margin-top: 210px;
         margin-left: 26px;
     }
 
     .img-icon-banner {
         max-width: 53px;
-        top: 20%;
-        left: 45.5%;
+        top: 15%;
+        left: 44%;
     }
 
     /* benefit */
+
+    
+    .wrapper {
+        width: 100%;
+        padding: 0 30px;
+    }
+
     .benefit__heading {
         font-size: 3.2rem;
     }
@@ -245,14 +253,14 @@
     }
 
     .new__item-personnel-img {
-        margin-top: 148px;
+        margin-top: 107px;
     }
 
 
     /* contact */
     #contact {
         width: 100%;
-        padding: 40px 20px 110px;
+        padding: 40px 30px 110px;
         background-position: 30px 100%;
     }
 
@@ -417,13 +425,18 @@
 
     /* procedure */
 
+    .wrapper {
+        width: 100%;
+        padding: 0 16px;
+    }
+
     .procedure__title {
         font-size: 3.2rem;
         padding: 0 20px;
     }
 
     .procedure__content {
-        padding: 0 16px;
+        padding: 0;
         height: auto;
         margin-top: 36px;
     }
@@ -461,6 +474,10 @@
         display: block;
     }
 
+    .new-personnel {
+        min-height: 640px;
+    }
+
     .new-container {
         text-align: center;
     }
@@ -474,6 +491,7 @@
     }
     .new__item-personnel-img {
         margin-top: 0;
+        padding: 0;
     }
 
     /* contact */
@@ -578,11 +596,12 @@
     .img-icon-banner {
         max-width: 48px;
         top: 26%;
-        left: 44%;
+        left: 43%;
     }
 
     .bg-banner-3 {
         margin-top: 20px;
+        margin-left: 0;
     }
 
     .slick-dots {
@@ -605,6 +624,10 @@
 
     /* procedure */
 
+    .wrapper {
+        padding: 0 16px;
+    }
+
     .procedure__title {
         font-size: 2.4rem;
         width: 100%;
@@ -615,7 +638,7 @@
     }
 
     .procedure__content {
-        padding: 0 16px;
+        padding: 0;
         width: 100%;
         height: auto;
         margin-top: 36px;
@@ -659,7 +682,7 @@
     }
 
     .new__item-personnel-img {
-        margin-top: 32px;
+        margin-top: 0;
     }
     /* contact */
 

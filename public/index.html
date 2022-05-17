@@ -72,28 +72,28 @@
         </div>
       </div>
       <div class="menu-bottom">
-        <div class="menu-bottom__container">
-          <a class="menu-bottom__logo" href="#">
+        <div class="menu-bottom__container inner d-flex flex-wrap justify-content-between">
+          <a class="menu-bottom__logo col-lg-3 col-md-3 col-12" href="#">
             <img src="./asset/img/Logo phần mềm quản lý đấu thầu thuốc 2.svg" alt="Nha dau thau thuoc">
           </a>
-          <nav class="menu-bottom__nav">
+          <nav class="menu-bottom__nav col-lg-8 col-md-8 col-12">
             <div class="nav-item">
               <a class="nav-link" href="#">Trang chủ</a>
             </div>
             <div class="nav-item">
-              <a class="nav-link" href="#">Lợi ích</a>
+              <a class="nav-link menu-benefit" href="">Lợi ích</a>
             </div>
             <div class="nav-item">
-              <a class="nav-link" href="#">Quy trình</a>
+              <a class="nav-link menu-procedure" href="">Quy trình</a>
             </div>
             <div class="nav-item">
-              <a class="nav-link" href="#">Nhân sự</a>
+              <a class="nav-link menu-personnel" href="">Nhân sự</a>
             </div>
             <div class="nav-item">
-              <a class="nav-link" href="#">Liên hệ</a>
+              <a class="nav-link menu-contact" href="">Liên hệ</a>
             </div>
             <div class="btn_menu">
-              <button class="btn btn-login">Đăng Nhập</button>
+              <!-- <button class="btn btn-login">Đăng Nhập</button> -->
               <button class="btn btn_register">Đăng Ký dùng thử</button>
             </div>
           </nav>
@@ -112,22 +112,21 @@
           </div>
           <ul class="nav__menu-mobile col-md-12 col-12">
             <li class="nav__menu-mobile-item col-12">
-              <a class="nav__menu-mobile-link" href="#">Trang chủ</a>
+              <a class="nav__menu-mobile-link" href="">Trang chủ</a>
             </li>
             <li class="nav__menu-mobile-item col-12">
-              <a class="nav__menu-mobile-link" href="#">Lợi ích</a>
+              <a class="nav__menu-mobile-link menu-benefit" href="">Lợi ích</a>
             </li>
             <li class="nav__menu-mobile-item col-12">
-              <a class="nav__menu-mobile-link" href="#">Quy trình</a>
+              <a class="nav__menu-mobile-link menu-procedure" href="">Quy trình</a>
             </li>
             <li class="nav__menu-mobile-item col-12">
-              <a class="nav__menu-mobile-link" href="#">Nhân sự</a>
+              <a class="nav__menu-mobile-link menu-personnel" href="">Nhân sự</a>
             </li>
             <li class="nav__menu-mobile-item col-12">
-              <a class="nav__menu-mobile-link" href="#">Liên hệ</a>
+              <a class="nav__menu-mobile-link menu-contact" href="">Liên hệ</a>
             </li>
             <li class="nav__menu-mobile-item col-12">
-              <button class="btn nav__menu-mobile-login">Đăng Nhập</button>
               <button class="btn btn_register">Đăng Ký dùng thử</button>
             </li>
           </ul>
@@ -221,7 +220,7 @@
       </div>
     </div>
 
-    <div class="benefit">
+    <div id="benefit" class="benefit">
       <div class="benefit__title">LỢI ÍCH CỦA PHẦM MỀM</div>
       <h1 class="benefit__heading">Chúng tôi luôn mang tới những dịch vụ nổi bật</h1>
       <div class="benefit__content">
@@ -300,8 +299,8 @@
       </div>
     </div>
 
-    <div class="procedure">
-      <div class="procedure-item inner d-flex flex-wrap">
+    <div id="procedure" class="procedure">
+      <div class="procedure-item wrapper d-flex flex-wrap">
         <h1 class="procedure__title">Quy trình đấu thầu thuốc hiện đại đơn giản và hiệu quả</h1>
         <div class="procedure__content col-md-12 col-12">
           <div class="procedure__content-img col-md-12 col-12 d-flex">
@@ -378,7 +377,7 @@
           <h1 class="new__item-content-title">Quản lý và phân quyền rõ ràng</h1>
           <p class="new__item-content-des">Quản lý và phân quyền truy cập hệ thống rõ ràng theo vai trò của bốn nhóm tham gia.</p>
           <button class="new__item-content-btn">
-            <span>Dùng thủ ngay</span>
+            <span>Dùng thử ngay</span>
             <img src="./asset/icon/mui.png" alt="">
           </button>
         </div>
@@ -394,13 +393,13 @@
           <h1 class="new__item-content-title">Báo cáo thống kê chính xác, nhanh chóng </h1>
           <p class="new__item-content-des">Tổng hợp đầy đủ các báo cáo về thuốc, danh mục thuốc đấu thầu và thông tin nhà thầu.</p>
           <button class="new__item-content-btn">
-            <span>Dùng thủ ngay</span>
+            <span>Dùng thử ngay</span>
             <img src="./asset/icon/mui.png" alt="">
           </button>
         </div>
         <img src="./asset/img/new2.png" alt=""data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="new__item-img-mobile col-md-7 col-12">
       </div>
-      <div class="new-personnel">
+      <div id="new-personnel" class="new-personnel">
         <div class="new-container d-flex inner flex-wrap justify-content-between">
           <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000"  class="new__item-personnel-content col-md-5 col-lg-5 col-12">
             <h1 class="new__item-personnel-title">Nhân sự của chúng tôi</h1>
@@ -419,7 +418,7 @@
               </li>
             </ul>
             <button class="new__item-content-btn">
-              <span>Dùng thủ ngay</span>
+              <span>Dùng thử ngay</span>
               <img src="./asset/icon/mui.png" alt="">
             </button>
           </div>
@@ -562,8 +561,8 @@
         dots: true,
         infinity: true,
         arrows:false,
-        // autoplay: true,
-        autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 5000,
     });
   </script>
   <script src="./asset/js/main.js"></script>

@@ -7,7 +7,6 @@ let ProcedureDes = document.querySelectorAll('.procedure-description');
 
 const btnScollTop = document.querySelector('.controller__right-up');
 
-console.log(btnScollTop);
 window.onscroll = () => {
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       document.querySelector('.header').classList.add('nav');
@@ -25,7 +24,9 @@ MenuMoble.onclick = () => {
   CloseMenu.style.width = "16%";
 }
 
-CloseMenu.onclick = () => {
+CloseMenu.addEventListener('click', closeMenu) 
+
+function closeMenu() {
   document.querySelector('.nav__menu-mobile.show').classList.remove('show');
   MenuMoble.style.display = "flex";
   CloseMenu.style.width = "0";
@@ -59,13 +60,7 @@ setInterval(() => {
   animateMuis[indexActive].classList.add('active');
   ProcedureDes[indexActive + 1].classList.add('active');
   indexActive++;
-}, 2000);
-
-// if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  
-// } else {
-//   btnScollTop.style.display = "none";
-// }
+}, 1500);
 
 
 btnScollTop.onclick = () => {
@@ -73,7 +68,44 @@ btnScollTop.onclick = () => {
   document.documentElement.scrollTop = 0; 
 }
 
+function stopInterval() {
+  clearInterval();
+}
+
 //scroll to element
-document.querySelector('#benefit').addEventListener('click',function(){
-  document.querySelector('.benefit').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
-})
+const menuBenefits = document.querySelectorAll('.menu-benefit');
+const menuProcedures = document.querySelectorAll('.menu-procedure');
+const menuPersonnals = document.querySelectorAll('.menu-personnel');
+const menuContacts = document.querySelectorAll('.menu-contact');
+
+for(const menuBenefit of menuBenefits ) {
+  menuBenefit.onclick = (e) => {
+    e.preventDefault();
+    document.querySelector('.benefit').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    closeMenu();
+  }
+}
+
+for(const menuProcedure of menuProcedures ) {
+  menuProcedure.onclick = (e) => {
+    e.preventDefault();
+    document.querySelector('.procedure').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    closeMenu();
+  }
+}
+
+for(const menuPersonnal of menuPersonnals ) {
+  menuPersonnal.onclick = (e) => {
+    e.preventDefault();
+    document.querySelector('.new-personnel').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    closeMenu();
+  }
+}
+
+for(const menuContact of menuContacts ) {
+  menuContact.onclick = (e) => {
+    e.preventDefault();
+    document.querySelector('.contact').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    closeMenu();
+  }
+}

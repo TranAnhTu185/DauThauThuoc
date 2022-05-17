@@ -25,7 +25,7 @@
 }
 
 :root {
-    --width-content: 1190px;
+    --width-content: 1140px;
 }
 
 * {
@@ -46,7 +46,7 @@ body {
 
 .header {
     width: 100%;
-    height: 102px;
+    height: 114px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -63,13 +63,14 @@ body {
 
 .menu-top {
     width: 100%;
-    height: 30px;
-    padding: 10px 0;
+    height: 42px;
+    padding: 10px 0;    
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #EDF0F2;
     background-color: #fff;
+    font-size: 14px;
 }
 
 .menu-top__container {
@@ -122,6 +123,7 @@ body {
 
 .menu-bottom__nav {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-link {
@@ -130,6 +132,7 @@ body {
     font-size: 1.6rem;
     font-style: normal;
     line-height: 2.4;
+    padding: 5px 12px;
     color: #52606B;   
 }
 
@@ -146,13 +149,13 @@ body {
 .btn {
     height: 40px;
     padding: 8px 12px;
-    margin: 0 12px;
     color: #32B788;
     font-size: 1.6rem;
     border: 2px solid #32B788;
     display: flex;
     align-items: center;
     border-radius: 4px;
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -254,10 +257,6 @@ body {
     align-items: center;
 }
 
-.nav__menu-mobile-login {
-    margin-left: 0;
-}
-
 .nav__menu-mobile-link {
     text-decoration: none;
     color: #505560;
@@ -274,7 +273,7 @@ body {
 /* banner */
 
 .banner {
-    margin-top: 104px;
+    margin-top: 114px;
 }
 
 .img-slide-1 {
@@ -328,7 +327,7 @@ body {
 
 
 .banner-title {
-    font-size: 4.4rem;
+    font-size: 4.8rem;
     line-height: 5.4rem;
     font-weight: 700;
     font-family: SVN-Gilroy;
@@ -349,6 +348,11 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #52606B;
+    margin: 16px 0;
+}
+
+.banner-item p {
+    margin: 0%;
 }
 
 
@@ -366,6 +370,7 @@ body {
     background-color: #32B788;
     outline: none;
     font-size: 1.6rem;
+    font-weight: 600;
     line-height: 1.9;
     border-radius: 4px;
     width: 170px;
@@ -405,7 +410,7 @@ body {
 .img-icon-banner {
     position: absolute;
     top: 24%;
-    left: 45.6%;
+    left: 47.6%;
     animation: fadeIn 2.5s 3s both alternate infinite;
 }
 
@@ -466,6 +471,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 36px;
+    font-weight: 700;
 }
 
 .benefit__heading {
@@ -561,6 +567,11 @@ body {
     line-height: 24px;
     color: #52606B;
     display: flex;
+    margin-bottom: 12px;
+}
+
+.benefit__content-item-des p {
+    margin: 0;
 }
 
 .benefit__content-item-des img {
@@ -576,6 +587,12 @@ body {
     background-color: #2572C9;
     padding: 60px 0;
     position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
 .procedure__title {
@@ -650,7 +667,7 @@ body {
     content: "";
     position: absolute;
     top: 140px;
-    right: -21px;
+    right: -14px;
 }
 
 .mui-3 {
@@ -704,7 +721,7 @@ body {
 }
 
 .procedure-description.active{
-    color: #32B788;
+    color: #20E0BB;
 }
 
 .procedure-img-tablet {
@@ -712,7 +729,7 @@ body {
 }
 
 .animate-mui.active {
-    filter: invert(36%) sepia(80%) saturate(375%) hue-rotate(99deg) brightness(102%) contrast(87%);
+    filter: invert(15%) sepia(58%) saturate(437%) hue-rotate(69deg) brightness(101%) contrast(91%);
 }
 
 .procedure__content-img-mobile {
@@ -749,6 +766,7 @@ body {
 }
 
 .new__item-content-btn {
+    margin-top: 30px;
     width: 178px;
     height: 40px;
     background: #32B788;
@@ -783,10 +801,14 @@ body {
     width: 100%;
     background-color: #0D62C3;
     margin-top: 60px;
+    background-image: url('../img/11111.png');
+    background-repeat: no-repeat;
+    height: 460px;
 }
 
 .new-container{
     align-items: center;
+    height: 100%;
 }
 
 .new__item-personnel-title {
@@ -812,7 +834,11 @@ body {
     line-height: 24px;
     color: #FFFFFF;
     display: flex;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
+}
+
+.new__item-personnel-des p {
+    margin: 0;
 }
 
 .new__item-personnel-des img {
@@ -822,7 +848,7 @@ body {
 }
 
 .new__item-personnel-img {
-    padding-top: 50px;
+    padding-top: 104px;
 }
 
 
@@ -1203,7 +1229,7 @@ body {
 }
 
 .controller-phone-des {
-    width: 150px;
+    width: 180px;
     height: 48px;
     font-size: 2rem;
     line-height: 24px;

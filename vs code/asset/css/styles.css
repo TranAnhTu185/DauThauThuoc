@@ -25,7 +25,7 @@
 }
 
 :root {
-    --width-content: 1190px;
+    --width-content: 1140px;
 }
 
 * {
@@ -123,6 +123,7 @@ body {
 
 .menu-bottom__nav {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-link {
@@ -148,13 +149,13 @@ body {
 .btn {
     height: 40px;
     padding: 8px 12px;
-    margin: 0 12px;
     color: #32B788;
     font-size: 1.6rem;
     border: 2px solid #32B788;
     display: flex;
     align-items: center;
     border-radius: 4px;
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -256,10 +257,6 @@ body {
     align-items: center;
 }
 
-.nav__menu-mobile-login {
-    margin-left: 0;
-}
-
 .nav__menu-mobile-link {
     text-decoration: none;
     color: #505560;
@@ -276,7 +273,7 @@ body {
 /* banner */
 
 .banner {
-    margin-top: 104px;
+    margin-top: 114px;
 }
 
 .img-slide-1 {
@@ -330,7 +327,7 @@ body {
 
 
 .banner-title {
-    font-size: 4.4rem;
+    font-size: 4.8rem;
     line-height: 5.4rem;
     font-weight: 700;
     font-family: SVN-Gilroy;
@@ -351,6 +348,11 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #52606B;
+    margin: 16px 0;
+}
+
+.banner-item p {
+    margin: 0%;
 }
 
 
@@ -368,6 +370,7 @@ body {
     background-color: #32B788;
     outline: none;
     font-size: 1.6rem;
+    font-weight: 600;
     line-height: 1.9;
     border-radius: 4px;
     width: 170px;
@@ -407,7 +410,7 @@ body {
 .img-icon-banner {
     position: absolute;
     top: 24%;
-    left: 45.6%;
+    left: 47.6%;
     animation: fadeIn 2.5s 3s both alternate infinite;
 }
 
@@ -468,7 +471,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 36px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .benefit__heading {
@@ -564,6 +567,11 @@ body {
     line-height: 24px;
     color: #52606B;
     display: flex;
+    margin-bottom: 12px;
+}
+
+.benefit__content-item-des p {
+    margin: 0;
 }
 
 .benefit__content-item-des img {
@@ -659,7 +667,7 @@ body {
     content: "";
     position: absolute;
     top: 140px;
-    right: -21px;
+    right: -14px;
 }
 
 .mui-3 {
@@ -713,7 +721,7 @@ body {
 }
 
 .procedure-description.active{
-    color: #32B788;
+    color: #20E0BB;
 }
 
 .procedure-img-tablet {
@@ -721,7 +729,7 @@ body {
 }
 
 .animate-mui.active {
-    filter: invert(36%) sepia(80%) saturate(375%) hue-rotate(99deg) brightness(102%) contrast(87%);
+    filter: invert(15%) sepia(58%) saturate(437%) hue-rotate(69deg) brightness(101%) contrast(91%);
 }
 
 .procedure__content-img-mobile {
@@ -826,7 +834,11 @@ body {
     line-height: 24px;
     color: #FFFFFF;
     display: flex;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
+}
+
+.new__item-personnel-des p {
+    margin: 0;
 }
 
 .new__item-personnel-des img {
@@ -836,7 +848,7 @@ body {
 }
 
 .new__item-personnel-img {
-    padding-top: 90px;
+    padding-top: 104px;
 }
 
 
