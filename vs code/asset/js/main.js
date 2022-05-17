@@ -109,3 +109,28 @@ for(const menuContact of menuContacts ) {
     closeMenu();
   }
 }
+
+
+// register Test
+
+const btnRegisterTests = document.querySelectorAll('.js-register');
+const modal = document.querySelector('.js-modal');
+const buttonCloseTest = document.querySelector('.close-test');
+const modalContainer = document.querySelector('.js-modal-container');
+
+for(const btnRegisterTest of btnRegisterTests) {
+  btnRegisterTest.onclick = () => {
+    modal.classList.add('open');
+  }
+}
+
+buttonCloseTest.onclick = () => {
+  modal.classList.remove('open');
+}
+
+modalContainer.addEventListener('click', function (event) {
+  //ngừng nổi bọt
+  event.stopPropagation()
+})
+
+console.log(buttonCloseTest);

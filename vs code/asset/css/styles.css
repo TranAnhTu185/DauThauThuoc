@@ -28,6 +28,10 @@
     --width-content: 1140px;
 }
 
+.mb-16 {
+    margin-bottom: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +55,7 @@ body {
     flex-direction: column;
     position: fixed;
     top: 0;
-    z-index: 10000;
+    z-index: 10;
 }
 
 .header.nav {
@@ -1293,6 +1297,141 @@ body {
 
 }
 
+/* model */
+.model {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 100%;
+    z-index: 12;
+    overflow: hidden;
+    animation: modalFadeOut linear 0.5s;
+}
+
+.model.open {
+    bottom: 0;
+    animation: modalFadeIn linear 0.5s;
+}
+
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    position: relative;
+    z-index: 15;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.form-resgister {
+    width: 480px;
+    height: 470px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    animation: formTest 1s linear;
+}
+
+.register-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2F4858;
+    text-align: center;
+}
+
+.form-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #677987;
+}
+
+.form-input {
+    height: 40px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    border-radius: 4px;
+}
+
+.btn-test {
+    width: 100%;
+    height: 40px;
+    background: #32B788;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.close-test {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: -22px;
+    right: -22px;
+    border: none;
+    border-radius: 50%;
+    background-color: #32B788;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        bottom: 100%;
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+@keyframes formTest {
+    from {
+        height: 0;
+    }
+    to {
+        height: 470px;
+    }
+}
+
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        bottom: 0;
+    }
+    to {
+        opacity: 0;
+        bottom: 100%;
+    }
+}
+
 @keyframes fadeIn {
     from {
         transform: translateY(-20px);
@@ -1420,3 +1559,4 @@ body {
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out
 }
+
