@@ -57,9 +57,9 @@
         top: -25px;
     }
 
-    /* .bg-banner-3 { 
-        margin-top: 103px; 
-    } */
+    .bg-banner-3 { 
+        margin-top: 116px; 
+    }
     
     .slick-dots {
         bottom: 20px;
@@ -184,10 +184,9 @@
         top: 0;
     }
 
-    /* .bg-banner-3 {
-        margin-top: 210px;
-        margin-left: 26px;
-    } */
+    .bg-banner-3 {
+        margin-top: 228px;
+    }
 
     .img-icon-banner {
         max-width: 53px;
@@ -388,13 +387,13 @@
         padding-top: 30px;
     }
 
-    .bg-banner-2 {
+    /* .bg-banner-2 {
         padding-top: 0;
-    }
-
-    /* .bg-banner-3 {
-        margin-top: 71px;
     } */
+
+    .bg-banner-3 {
+        margin-top: 95px;
+    }
 
     .banner-btn {
         margin: 20px auto 0;
@@ -598,22 +597,30 @@
         height: 720px;
     } 
 
+    .banner-container {
+        min-height: 332px;
+    }
+
     .img-icon-banner {
         max-width: 48px;
         top: 26%;
         left: 43%;
     }
 
-    /* .bg-banner-3 {
-        margin-top: 20px;
+    .bg-banner-3 {
+        margin-top: 77px;
         margin-left: 0;
-    } */
+    }
 
     .slick-dots {
         bottom: 10px;
     }
 
     /* benefit */
+
+    .benefit__heading {
+        margin-bottom: 124px;
+    }
 
     .benefit__content-wrapper {
         padding: 16px 0;
@@ -698,7 +705,8 @@
     #contact {
         width: 100%;
         padding: 0 16px;
-        background-position: 18px 100%;
+        background-position: bottom center;
+        background-size: 320px;
     }
 
     .contact__content-phone span, 
@@ -733,11 +741,19 @@
     }
 
     .footer-container {
-        padding-top: 60px;
+        padding-top: 72px;
     }
 
     .footer__top-logo {
         width: 70%;
+    }
+
+    /* form-test */
+
+    .form-resgister{
+        width: 300px;
+        height: auto;
+        padding: 20px 30px;
     }
 
 }

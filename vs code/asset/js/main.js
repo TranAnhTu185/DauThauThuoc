@@ -117,22 +117,28 @@ const btnRegisterTests = document.querySelectorAll('.js-register');
 const modal = document.querySelector('.js-modal');
 const buttonCloseTest = document.querySelector('.close-test');
 const modalContainer = document.querySelector('.js-modal-container');
+const formRes = document.querySelector('.form-resgister');
 
 for(const btnRegisterTest of btnRegisterTests) {
   btnRegisterTest.onclick = () => {
+    if(formRes.classList.contains('hide')) {
+      formRes.classList.remove('hide');
+    }
     modal.classList.add('open');
-    document.querySelector('.form-resgister').style.display = 'flex';
+    formRes.classList.add('show');
   }
 }
 
 buttonCloseTest.onclick = () => {
-  modal.classList.remove('open');
-  modal.style.animation = 'modalFadeOut linear 0.5s';
+  formRes.classList.remove('show');
+  formRes.classList.add('hide');
+  setTimeout(() => {
+    modal.classList.remove('open');
+  }, 700);
+  
 }
 
 modalContainer.addEventListener('click', function (event) {
   //ngừng nổi bọt
   event.stopPropagation()
 })
-
-console.log(buttonCloseTest);

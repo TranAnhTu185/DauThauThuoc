@@ -373,13 +373,14 @@ body {
 .banner-btn {
     background-color: #32B788;
     outline: none;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 1.9;
+    line-height: 19px;
     border-radius: 4px;
-    width: 170px;
+    width: 182px;
     height: 40px;
     margin-top: 40px;
+    padding: 10px;
     border: none;
     display: flex;
     color: #fff;
@@ -419,7 +420,7 @@ body {
 }
 
 .banner-btn img {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .slick-dots li {
@@ -490,33 +491,10 @@ body {
 
 .benefit__content {
     width: 100%;
-    background: linear-gradient(180deg, #CFEEE7 0%, rgba(228, 247, 236, 0) 100%);
+    background-image: url('../img/bg-bene.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    height: auto;
-}
-
-.benefit__content:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 59% 89%;
-    width: 56%;
-    height: 130px;
-    background-color: white;
-    right: 0px;
-    top: -78px;
-}
-
-.benefit__content:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 50% 63%;
-    width: 48%;
-    height: 113px;
-    background-color: #CFEEE7;
-    left: 0;
-    top: -44px;
 }
 
 .benefit__wrapper {
@@ -733,7 +711,7 @@ body {
 }
 
 .animate-mui.active {
-    filter: invert(15%) sepia(58%) saturate(437%) hue-rotate(69deg) brightness(101%) contrast(91%);
+    filter: invert(23%) sepia(16%) saturate(1800%) hue-rotate(116deg) brightness(98%) contrast(93%);
 }
 
 .procedure__content-img-mobile {
@@ -914,14 +892,6 @@ body {
     z-index: 3;
 }
 
-.contact__content-img img {
-    height: 207px;
-    position: absolute;
-    top: 44px;
-    left: 64px;
-    z-index: 100;
-}
-
 .contact__content-img-mobile {
     width: 325px;
     height: 325px;
@@ -947,7 +917,7 @@ body {
     height: 207px;
     position: absolute;
     bottom: -60px;
-    left: 44px;
+    left: 72px;
     z-index: 10;
 }
 
@@ -1055,10 +1025,26 @@ body {
 
 .footer__top-icon-item {
     margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.footer__top-icon-item:hover {
+    background-color: #32B788;
+    border: none;
 }
 
 .footer__top-icon-item a {
     text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__top-rules-title,
@@ -1303,23 +1289,21 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    bottom: 100%;
+    bottom: 0;
+    display:none;
     z-index: 12;
     overflow: hidden;
-    /* animation: modalFadeOut linear 0.3s; */
 }
 
 .model.open {
-    bottom: 0;
-    animation: modalFadeIn linear 0.7s;
+    display: block;
 }
-
 
 .modal__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal__body {
@@ -1340,7 +1324,16 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    display: none;
+    transform: translateY(-50px);
+}
+
+.form-resgister.show {
+    transform: translateY(0);
+    animation: modelContainer 0.7s ease-out;
+}
+.form-resgister.hide {
+    transform: translateY(-50px);
+    animation: modelContainerOut 0.7s ease-out;
 }
 
 .register-heading {
@@ -1368,6 +1361,15 @@ body {
     background: #FFFFFF;
     border: 1px solid #EAECF0;
     border-radius: 4px;
+    padding: 12px 16px 12px 16px;
+}
+
+.form-input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #2fb388;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem rgb(36 134 103 / 25%);
 }
 
 .btn-test {
@@ -1383,6 +1385,20 @@ body {
     text-align: center;
     color: #FFFFFF;
     border: none;
+    transition: all 0.5s ease;
+    justify-content: center;
+    background-image: radial-gradient(circle, transparent 1%, #32B788 1%);
+    background-position: center;
+    background-size: 15000%;
+}
+
+.btn-test:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    box-shadow: 0 5px 15px rgb(255 81 139 / 20%);
+    text-decoration: none;
+    background-color: #8ed4bc;
+    background-size: 100%;
 }
 
 .close-test {
@@ -1400,25 +1416,25 @@ body {
     cursor: pointer;
 }
 
-@keyframes modalFadeIn {
+@keyframes modelContainer {
     from {
         opacity: 0;
-        bottom: 100%;
+        transform: translateY(-50px);
     }
     to {
         opacity: 1;
-        bottom: 0;
+        transform: translateY(0);
     }
 }
 
-@keyframes modalFadeOut {
+@keyframes modelContainerOut {
     from {
         opacity: 1;
-        bottom: 0;
+        transform: translateY(0);
     }
     to {
         opacity: 0;
-        bottom: 100%;
+        transform: translateY(-50px);
     }
 }
 
