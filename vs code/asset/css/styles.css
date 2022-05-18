@@ -1306,7 +1306,7 @@ body {
     bottom: 100%;
     z-index: 12;
     overflow: hidden;
-    animation: modalFadeOut linear 0.3s;
+    /* animation: modalFadeOut linear 0.3s; */
 }
 
 .model.open {

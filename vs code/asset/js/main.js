@@ -127,6 +127,7 @@ for(const btnRegisterTest of btnRegisterTests) {
 
 buttonCloseTest.onclick = () => {
   modal.classList.remove('open');
+  modal.style.animation = 'modalFadeOut linear 0.5s';
 }
 
 modalContainer.addEventListener('click', function (event) {

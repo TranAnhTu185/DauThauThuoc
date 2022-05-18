@@ -109,3 +109,30 @@ for(const menuContact of menuContacts ) {
     closeMenu();
   }
 }
+
+
+// register Test
+
+const btnRegisterTests = document.querySelectorAll('.js-register');
+const modal = document.querySelector('.js-modal');
+const buttonCloseTest = document.querySelector('.close-test');
+const modalContainer = document.querySelector('.js-modal-container');
+
+for(const btnRegisterTest of btnRegisterTests) {
+  btnRegisterTest.onclick = () => {
+    modal.classList.add('open');
+    document.querySelector('.form-resgister').style.display = 'flex';
+  }
+}
+
+buttonCloseTest.onclick = () => {
+  modal.classList.remove('open');
+  modal.style.animation = 'modalFadeOut linear 0.5s';
+}
+
+modalContainer.addEventListener('click', function (event) {
+  //ngừng nổi bọt
+  event.stopPropagation()
+})
+
+console.log(buttonCloseTest);
