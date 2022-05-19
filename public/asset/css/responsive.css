@@ -156,10 +156,17 @@
     .img-slide-3 {
         max-height: 530px;
     } 
+    .title-2 {
+        font-size: 48px;
+    }
     
     .banner-title {
-        font-size: 3.2rem;
+        font-size: 3.6rem;
         line-height: 4.4rem;
+    }
+
+    .banner-title span {
+        font-size: 3.2rem;
     }
 
     .banner-container {
@@ -392,13 +399,22 @@
         padding: 0 16px;
     }
 
-    .banner-title {
-        font-size: 3.2rem;
+    .title-2 {
+        font-size: 4rem;
+    }
+
+    .banner-title,
+    .title-2 {
+        font-size: 3.6rem;
         line-height: 4.4rem;
         width: 100%;
         display: flex;
         text-align: center;
         flex-direction: column;
+    }
+
+    .banner-title span {
+        font-size: 3.2rem;
     }
     .img-icon-banner {
         top: 32%;
