@@ -34,7 +34,7 @@ function closeMenu() {
 
 let indexActive = 0;
 
-setInterval(() => {
+ let PCInterval = setInterval(() => {
   animateMuis.forEach(item => {
     if (item.classList.contains('active')) {
         item.classList.remove('active');
@@ -69,7 +69,8 @@ btnScollTop.onclick = () => {
 }
 
 function stopInterval() {
-  clearInterval();
+  clearInterval(PCInterval);
+  clearInterval(mobileInterval);
 }
 
 //scroll to element
@@ -142,3 +143,36 @@ modalContainer.addEventListener('click', function (event) {
   //ngừng nổi bọt
   event.stopPropagation()
 })
+
+// animation-mobile 
+ const MuiMobiles = document.querySelectorAll('.animate-mui-m');
+ const desMobiles = document.querySelectorAll('.procedure-mobile-des');
+ let index = 0;
+
+ let mobileInterval = setInterval(() => {
+  MuiMobiles.forEach(item => {
+     if (item.classList.contains('active')) {
+         item.classList.remove('active');
+     }
+   }) 
+ 
+   desMobiles.forEach(des => {
+     if(index + 1 > 8 ) {
+      desMobiles[0].classList.add('active');
+     }
+     if(des.classList.contains('active') && index + 1 <= 8) {
+       des.classList.remove('active');
+     }
+   })
+ 
+ 
+   if (index == MuiMobiles.length) {
+     desMobiles[0].classList.add('active');
+     setTimeout(() => {
+       index = 0;
+     },1000)
+   }
+   document.querySelector(`.dt-${index}`).classList.add('active');
+   document.querySelector(`.pos-${index + 1}`).classList.add('active');
+   index++;
+ }, 1500);

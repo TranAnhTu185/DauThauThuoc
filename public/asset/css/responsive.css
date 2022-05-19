@@ -56,10 +56,6 @@
         position: relative;
         top: -25px;
     }
-
-    .bg-banner-3 { 
-        margin-top: 116px; 
-    }
     
     .slick-dots {
         bottom: 20px;
@@ -184,10 +180,6 @@
         top: 0;
     }
 
-    .bg-banner-3 {
-        margin-top: 228px;
-    }
-
     .img-icon-banner {
         max-width: 53px;
         top: 15%;
@@ -227,17 +219,57 @@
     }
 
     .procedure__content-img {
-        display: none !important;
+        height: 204px;
     }
 
-
-    .procedure-img-tablet {
-        display: block;
+    .procedure-text,
+    .procedure-description {
+        font-size: 10px;
+        line-height: 14px;
     }
 
+    .animate-mui {
+        width: 20px
+    }
 
-    .procedure-img-tablet img {
-        width: 100%;
+    .x2 p,
+    .x4 p {
+        padding: 0;
+    }
+
+    .procedure-text {
+        top: -27px;
+        right: -16px;
+    }
+
+    .mui-1 {
+        top: -15px;
+    }
+
+    .mui-2,
+    .mui-4,
+    .mui-6 {
+        top: 82px;
+        right: -24px;
+    }
+
+    .mui-3 {
+        top: -15px;
+        right: -11px;
+    }
+
+    .mui-5 {
+        top: -10px;
+        right: -25px;
+    }
+
+    .mui-7 {
+        top: -10px;
+        right: -25px;
+    }
+
+    .img-content-0 {
+        bottom: 40px;
     }
 
     .procedure__content-img-mobile {
@@ -366,6 +398,7 @@
         width: 100%;
         display: flex;
         text-align: center;
+        flex-direction: column;
     }
     .img-icon-banner {
         top: 32%;
@@ -387,14 +420,6 @@
         padding-top: 30px;
     }
 
-    /* .bg-banner-2 {
-        padding-top: 0;
-    } */
-
-    .bg-banner-3 {
-        margin-top: 95px;
-    }
-
     .banner-btn {
         margin: 20px auto 0;
     }
@@ -404,6 +429,7 @@
         font-size: 3.2rem;
         width: 100%;
         padding: 0 40px;
+        margin-bottom: 130px;
     }
 
     .benefit__content-wrapper {
@@ -449,13 +475,43 @@
         display: none !important;
     }
 
-    .procedure-img-tablet {
-        display: none !important;
+    .content-img-mobile {
+        width: 100%;
+        display: flex !important;
     }
 
-    .procedure__content-img-mobile {
-        width: 100%;
-        display: block !important;
+    .m3 {
+        margin-top: 175px;
+        margin-bottom: 60px;
+    }
+
+    .m1 {
+        margin-top: 139px;
+        margin-bottom: 40px;
+    }
+
+    .mui-1-m {
+        position: absolute;
+        top: -8px;
+        right: -58px;
+    }
+
+    .mui-2-m {
+        position: absolute;
+        right: -64px;
+        bottom: -37px;
+    }
+
+    .mui-5-m {
+        position: absolute;
+        top: 45px;
+        left: -59px;
+    }
+
+    .mui-6-m {
+        position: absolute;
+        bottom: -38px;
+        left: 41px;
     }
 
     /* new */
@@ -479,7 +535,12 @@
     }
 
     .new-personnel {
-        min-height: 640px;
+        height: auto;
+    }
+
+    .new-personnel-img {
+        height: 560px;
+        display: flex;
     }
 
     .new-container {
@@ -595,7 +656,7 @@
     .img-slide-3 {
         max-height: 720px;
         height: 720px;
-    } 
+    }
 
     .banner-container {
         min-height: 332px;
@@ -607,16 +668,15 @@
         left: 43%;
     }
 
-    .bg-banner-3 {
-        margin-top: 77px;
-        margin-left: 0;
-    }
-
     .slick-dots {
         bottom: 10px;
     }
 
     /* benefit */
+
+    .benefit__heading {
+        margin-bottom: 124px;
+    }
 
     .benefit__content-wrapper {
         padding: 16px 0;
@@ -639,6 +699,7 @@
     .procedure__title {
         font-size: 3.2rem;
         width: 100%;
+        margin-bottom: 0;
     }
 
     .procedure__des {
@@ -656,8 +717,36 @@
         display: none !important;
     }
 
-    .procedure__content-img-mobile {
-        display: block;
+    .content-img-mobile {
+        display: flex !important;
+    }
+
+    .m3 {
+        margin-top: 96px;
+    }
+
+    .m1 {
+        margin-top: 89px;
+    }
+
+    .mui-1-m {
+        top: -8px;
+        right: -36px;
+    }
+    
+    .mui-2-m {
+        right: -45px;
+        bottom: 25px;
+    }
+
+    .mui-5-m {
+        top: 22px;
+        left: -41px;
+    }
+    
+    .mui-6-m {
+        bottom: -38px;
+        left: 26px;
     }
 
     /* new */
@@ -687,6 +776,9 @@
 
     .new-personnel {
         height: auto;
+    }
+    .new-personnel-img {
+        height: 300px;
     }
     
     .new__item-personnel-des {
